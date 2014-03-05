@@ -1,7 +1,10 @@
-from flask.ext.restful import Resource
+from flask import render_template
+from flask.views import MethodView
 
 
-class Index(Resource):
+class Index(MethodView):
 
     def get(self):
-        return 'hello world'
+        return render_template('index.html')
+
+index_view = Index.as_view('index')
