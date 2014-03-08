@@ -1,7 +1,7 @@
-from proj import api
+from proj import app
 from views import index
 
-api.add_resource(index.Index, '/index')
+app.add_url_rule('/index', view_func=index.index_view, methods=['GET',])
 
 
 
