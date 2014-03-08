@@ -1,0 +1,7 @@
+celery-with-redis
+flask
+flask-restful
+Flask-Script
+Flask-WTF
+pymongo
+ipython
