@@ -5,8 +5,6 @@
     * Author: mishashchetinin
 '''
 
-from flask.ext import restful
+from api import api
 
-api = restful.Api()
 
-import route
